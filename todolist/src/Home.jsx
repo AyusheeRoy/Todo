@@ -17,10 +17,7 @@ function Home() {
             <div><h2>No Record</h2></div>
             :
             todos.map(todo => (
-                 <div className='checkbox' onClick={handleEdit}>
-                    <BsCircle className='icon'/>
-                    <p>{todo.task}</p>
-                </div>
+                 <div>
                     {todo.task}
                 </div>
             ))
