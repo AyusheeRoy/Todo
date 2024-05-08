@@ -4,7 +4,7 @@ export default Create
 function Create() {
     const [task, setTask] = useState()
     const handleAdd = () => {
-        axios.post("http://localhost:3002/add", {task: task})
+        axios.post("https://todo-ayushee-backend.vercel.app/add", {task: task})
         .then(result => {
             location.reload()
         })
